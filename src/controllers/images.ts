@@ -120,7 +120,6 @@ export async function filterImage(req: Request, res: Response, next: NextFunctio
     resolve();
   }))
   const param: string = req.params.id;
-  console.log(req.body)
   const { grayscale, blur, watermark, blurRadius, top, left } = req.body;
   let watermarkPath: string | undefined;
 
